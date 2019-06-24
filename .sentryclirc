@@ -1,6 +1,6 @@
 [defaults]
 org=ee89ceab8a3e
-project=my-app
+project=sentry-demo
 
 [auth]
 token=0e875c19301544678e80b321e40b4d54047ccad2fc20430094681f4ea002f7e0

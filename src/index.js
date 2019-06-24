@@ -10,10 +10,14 @@ ReactDOM.render(<App />, document.getElementById('root'));
 Sentry.init({
   dsn: "https://e2ea021be8314648829b50b337e3f7c2@sentry.io/1487164",
   environment: 'production',
-  release: "1.0.6"
+  release: "1.0.7"
 });
 
-Sentry.captureException(new Error("error 1.0.6 "));
+try {
+  new Error('1.0.7')
+} catch (err) {
+  Sentry.captureException(err);
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
