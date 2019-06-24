@@ -10,7 +10,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 Sentry.init({
   dsn: "https://e2ea021be8314648829b50b337e3f7c2@sentry.io/1487164",
   environment: 'staging',
-  release: "sentry-demo@1.0.0"
+  release: "sentry-demo@1.0.1"
 });
 
 Sentry.captureException(new Error("Something broke"));
