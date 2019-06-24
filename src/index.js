@@ -9,11 +9,11 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 Sentry.init({
   dsn: "https://e2ea021be8314648829b50b337e3f7c2@sentry.io/1487164",
-  environment: 'staging',
-  release: "1.0.1"
+  environment: 'production',
+  release: "1.0.2"
 });
 
-Sentry.captureException(new Error("Something broke"));
+Sentry.captureException(new Error("1.0.2 bug"));
 Sentry.captureMessage('Something went wrong');
 
 // If you want your app to work offline and load faster, you can change
