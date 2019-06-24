@@ -13,7 +13,6 @@ Sentry.init({
   release: "1.0.2"
 });
 
-Sentry.captureException(new Error("1.0.2 bug"));
 Sentry.captureMessage('Something went wrong');
 
 
