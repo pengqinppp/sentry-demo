@@ -10,10 +10,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 Sentry.init({
   dsn: "https://e2ea021be8314648829b50b337e3f7c2@sentry.io/1487164",
   environment: 'production',
-  release: "1.0.2"
+  release: "1.0.3"
 });
 
-Sentry.captureException(new Error("1.0.2 bug"));
 Sentry.captureMessage('Something went wrong');
 
 
