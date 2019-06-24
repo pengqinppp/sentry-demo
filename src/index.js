@@ -16,6 +16,7 @@ Sentry.init({
 Sentry.captureException(new Error("1.0.2 bug"));
 Sentry.captureMessage('Something went wrong');
 
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about stervice workers: https://bit.ly/CRA-PWA
