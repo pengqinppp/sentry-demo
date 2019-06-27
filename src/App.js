@@ -1,8 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as Sentry from '@sentry/browser';
 
 function App() {
+  // Sentry.captureException(new Error("Something broke"));
+  // Sentry.captureMessage('Something went wrong');
+  Sentry.captureMessage('1.0.8 error');
   return (
     <div className="App">
       <header className="App-header">
